@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '../src/app';
+import {parameterizedApp} from '../src/app';
 import { PrismaClient } from '@prisma/client';
 import nock from 'nock';
 
@@ -15,6 +15,8 @@ describe('City API Tests', () => {
     // Disconnect Prisma after all tests
     await prisma.$disconnect();
   });
+
+  const app = parameterizedApp(prisma)
 
   describe('POST /api/cities', () => {
     it('should create a new city and return 201 with the city details', async () => {

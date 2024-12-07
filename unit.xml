@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="0" errors="0" time="2.534">
+  <testsuite name="City API Tests" errors="0" failures="0" skipped="0" timestamp="2024-12-07T19:10:26" time="2.431" tests="10">
+    <testcase classname="City API Tests POST /api/cities should create a new city and return 201 with the city details" name="City API Tests POST /api/cities should create a new city and return 201 with the city details" time="0.052">
+    </testcase>
+    <testcase classname="City API Tests POST /api/cities should return 400 if the city name is missing" name="City API Tests POST /api/cities should return 400 if the city name is missing" time="0.006">
+    </testcase>
+    <testcase classname="City API Tests POST /api/cities should return 400 if the city name is an empty string" name="City API Tests POST /api/cities should return 400 if the city name is an empty string" time="0.004">
+    </testcase>
+    <testcase classname="City API Tests POST /api/cities should return 400 if the city name exceeds maximum length" name="City API Tests POST /api/cities should return 400 if the city name exceeds maximum length" time="0.004">
+    </testcase>
+    <testcase classname="City API Tests POST /api/cities should handle database errors gracefully and return 500" name="City API Tests POST /api/cities should handle database errors gracefully and return 500" time="0.005">
+    </testcase>
+    <testcase classname="City API Tests GET /api/cities/:id/weather should return weather data for a valid city ID" name="City API Tests GET /api/cities/:id/weather should return weather data for a valid city ID" time="0.04">
+    </testcase>
+    <testcase classname="City API Tests GET /api/cities/:id/weather should return 404 if the city ID does not exist" name="City API Tests GET /api/cities/:id/weather should return 404 if the city ID does not exist" time="0.008">
+    </testcase>
+    <testcase classname="City API Tests GET /api/cities/:id/weather should return 400 for invalid city ID format" name="City API Tests GET /api/cities/:id/weather should return 400 for invalid city ID format" time="0.003">
+    </testcase>
+    <testcase classname="City API Tests GET /api/cities/:id/weather should handle database errors gracefully when fetching weather data" name="City API Tests GET /api/cities/:id/weather should handle database errors gracefully when fetching weather data" time="0.004">
+    </testcase>
+    <testcase classname="City API Tests Edge Cases should not allow duplicate city names and return 400" name="City API Tests Edge Cases should not allow duplicate city names and return 400" time="0.009">
+    </testcase>
+  </testsuite>
+</testsuites>
